@@ -11,8 +11,9 @@ import cn.hutool.core.io.FileUtil;
 
 public class MergeFile {
     public static void main(String[] args) {
+    	// 要合并的pdf文件目录
     	File[] files = FileUtil.ls("C:\\Users\\jingqianwen\\Documents\\餐补发票");
-        //String[] files = {  "e:\\1.pdf", "e:\\2.pdf" , "e:\\3.pdf"};
+    	// 合并后的pdf文件
         String savepath = "C:\\Users\\jingqianwen\\Documents\\餐补发票\\tempNew.pdf";
         Boolean bool = mergePdfFiles(files, savepath);
         System.out.println(bool);
